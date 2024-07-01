@@ -59,14 +59,17 @@ class Solution
     int getMiddle(Node head)
     {
          // Your code here.
-        if(head==null)
+       if(head==null)
             return -1;
-        Node slow=head,fast=head;
-        while(fast!=null&&fast.next!=null)
-        {
-            slow=slow.next;
-            fast=fast.next.next;
-        }
-        return slow.data;
+       int count=0;
+       Node curr;
+       for(curr=head;curr!=null;curr=curr.next){
+           count++;
+       }
+       curr=head;
+       for(int i=0;i<count/2;i++){
+           curr=curr.next;
+       }
+       return curr.data;
     }
 }
