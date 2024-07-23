@@ -44,17 +44,16 @@ class GFG {
 
 // } Driver Code Ends
 
-
-
 class Solution {
     public static int largest(int n, int[] arr) {
-        // code here
-        int max=arr[0];
-        for(int i=0;i<n;i++){
-            if(arr[i]>max){
-                max=arr[i];
-            }
-        }
-        return max;
-    }
+            // code 
+            //optimal approach
+                int max=arr[0];
+                for(int i=0;i<n;i++){
+                    if(arr[i]>max){
+                        max=arr[i];
+                    }
+                 }
+                return max;
+             }
 }
