@@ -32,7 +32,7 @@ class Solution
         // Code here
         long m=n;
         long rev=0;
-        while (n % 10 == 0 && n != 0) {
+        while (n % 10 == 0 ) {
             n = n / 10;
         }
 
